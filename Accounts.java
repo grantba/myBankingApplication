@@ -24,11 +24,11 @@ abstract class Accounts {
         return df.format(this.balance).toString();
     }
 
-    public abstract String deposit();
+    public abstract String deposit(double amount);
 
-    public abstract String withdrawal();
+    public abstract String withdrawal(double amount);
 
-    public abstract String transferFunds();
+//     public abstract String transferFunds(double amount, Accounts<T> accountTo);
     
     public String toString() { //overriding the toString() method  
         return "Your current balance is: $" + this.getBalance(); 

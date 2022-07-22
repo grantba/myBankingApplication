@@ -18,9 +18,9 @@ public class RunApplication {
         String account;
         double amount;
 
-        String customersFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\myBankingApplication\\CustomersDB.txt";
-        String checkingAccountsFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\myBankingApplication\\CheckingAccountsDB.txt";
-        String savingsAccountsFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\myBankingApplication\\SavingsAccountsDB.txt";
+        String customersFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\CustomersDB.txt";
+        String checkingAccountsFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\CheckingAccountsDB.txt";
+        String savingsAccountsFile = "C:\\Users\\grant\\Development\\Code\\Java Practice\\SavingsAccountsDB.txt";
 
         MenuHandler userMenu = new MenuHandler();
         UserInputHandler userInput = new UserInputHandler(customersFile, checkingAccountsFile, savingsAccountsFile);
@@ -222,6 +222,7 @@ public class RunApplication {
                         response = buffer.readLine();
                         lastName = response;
                     } else if (selection == (int)selection && selection == 5) {
+                        selection = 0;
                         break;
                     } else {
                         System.out.println(selection + " was an invalid response. Please try again.\n");

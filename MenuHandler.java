@@ -52,7 +52,7 @@ public class MenuHandler {
     }
 
     public String updateUserInfoMenu() {
-        return "What information would you like to update?\n1. Username" +
+        return "What information would you like to update?\n1. Username\n" +
             "2. Password\n3. First Name\n4. Last Name\n5. Cancel";
     }
 
